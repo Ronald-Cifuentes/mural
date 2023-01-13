@@ -1,5 +1,5 @@
 {
-  "name": "next-boilerplate",
+  "name": "mural",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,8 @@
     "start": "next start",
     "prettier": "node_modules/.bin/prettier -w \"**/*.{ts,tsx}\"",
     "format": "prettier --write .",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -38,6 +39,7 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.31.11",
+    "husky": "^8.0.3",
     "identity-obj-proxy": "^3.0.0",
     "jest-environment-jsdom": "^29.3.1",
     "jest-sonar-reporter": "^2.0.0",
