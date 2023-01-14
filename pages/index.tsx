@@ -1,20 +1,15 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react'
+import Cards from '../components/Cards'
+import Container from '../components/Container'
+import Map from '../components/Map'
 
-export interface IndexProps {
-  dataTestId?: string;
+const Home: FC = () => {
+  return (
+    <Container>
+      <Cards />
+      <Map />
+    </Container>
+  )
 }
 
-const Index: FC<IndexProps> = ({dataTestId = 'index-test'}) => {
-  const handleButton = (): void => {
-    console.log('TestXXX');
-  };
-
-  return (
-    <>
-      <div data-testid={dataTestId} />
-      <button onClick={handleButton}>Testx</button>
-    </>
-  );
-};
-
-export default Index;
+export default Home
