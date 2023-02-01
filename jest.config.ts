@@ -1,6 +1,6 @@
-import nextJest from 'next/jest';
+import nextJest from 'next/jest'
 
-const createJestCofig = nextJest({dir: '.'});
+const createJestCofig = nextJest({ dir: '.' })
 
 const customJestConfig = {
   testEnvironment: 'jsdom',
@@ -16,6 +16,6 @@ const customJestConfig = {
   collectCoverage: true,
   coverageReporters: ['lcov', 'text-summary'],
   testResultsProcessor: 'jest-sonar-reporter',
-};
+}
 
-module.exports = createJestCofig(customJestConfig);
+module.exports = createJestCofig(customJestConfig)
